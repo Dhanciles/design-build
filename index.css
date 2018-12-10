@@ -1,5 +1,7 @@
 body {
   display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 200px 100%;
   grid-template-areas:
     "nav header"
     "nav main"
@@ -27,6 +29,9 @@ body {
 }
 
 .main-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
   list-style: none;
   margin: 35px auto;
   padding: 0px;
@@ -59,6 +64,63 @@ header {
   grid-area: header;
 }
 
+/*MAIN STYLES*/
+
 main {
-  grid-area: main
+  background-image: url('everest.jpg');
+  background-size: cover;
+  grid-area: main;
+}
+
+.edit-goal-btn {
+  color: white;
+  background-color: #4f63679f;
+  border: 2px solid rgba(255, 174, 174, 0);
+  bottom: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  padding: 15px 20px;
+  right: 0;
+  position: fixed;
+  text-shadow: -2px 2px 3px rgb(85, 85, 85);
+  transition: all .3s ease;
+}
+
+.edit-goal-btn:hover {
+  cursor: pointer;
+  border-color: #e8972c;
+  transform: scale(1.1);
+}
+
+aside {
+  background-color: #d9eaea;
+  margin-top: 100px;
+  float: right;
+  padding: 0 90px;
+}
+
+.aside-content-container {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  justify-content: space-between;
+}
+
+.aside-header {
+  font-size: 1.9em;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 0px;
+}
+
+.content-value {
+  color: #e8972c;
+  font-size: 3.5em;
+  margin: 5px;
+}
+
+.content-label {
+  font-size: .8em;
+  text-align: center;
+  margin: 5px auto 20px;
 }
