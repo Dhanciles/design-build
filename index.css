@@ -227,9 +227,15 @@ aside {
   }
 
   .mobile-header {
-    display: block;
+    display: flex; 
+    position: relative;
+    justify-content: space-between; 
+    align-items: center;
     grid-area: header;
+    background-color: #4f6367; 
+    padding: 10px 30px; 
   }
+
 
   aside {
     margin-top: 40px;
@@ -307,3 +313,42 @@ aside {
     margin: 5px auto 20px;
   }
 }
+  .mobile-profile-text {
+    font-family: 'Oleo Script', cursive;
+    color: white; 
+    text-align: center; 
+    position: absolute;
+    width: 200px;
+    top: -12px;
+    left: calc(50vw - 100px)
+  }
+
+  .mobile-icons {
+    color: white;
+    font-size: 2em; 
+    margin-top: 0px; 
+    cursor: pointer;  
+  }
+
+  .mobile-logout-btn {
+    border: none; 
+    text-shadow: -2px 2px 3px rgb(85, 85, 85);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem; 
+    background-color: #4f6367;
+    color: white;
+    cursor: pointer;  
+    text-align: right; 
+  }
+
+  .mobile-icons:hover {
+    cursor: pointer; 
+    color: #e8972c; 
+  }
+
+  .mobile-logout-btn:hover {
+    cursor: pointer; 
+    color: #e8972c; 
+  }
+}
+ 
