@@ -4,7 +4,8 @@ body {
   grid-template-rows: 1fr 8fr; 
   grid-template-areas:
     "nav header"
-    "nav main"
+    "nav main";
+  height: 100%;
 }
 
 /*NAV STYLES*/
@@ -13,6 +14,7 @@ body {
   background-color: #4f6367;
   grid-area: nav;
   width: 250px;
+  height: 100vh;
 }
 
 .profile-pic {
@@ -56,6 +58,10 @@ body {
   cursor: pointer;
   border-color: #e8972c;
   transform: scale(1.1) translateX(10px)
+}
+
+#goals {
+  color: orange;
 }
 
 /*HEADER STYLES*/
@@ -123,7 +129,7 @@ header {
 /*MAIN STYLES*/
 
 main {
-  background-image: url('everest.jpg');
+  background-image: url('everest.jpeg');
   background-size: cover;
   grid-area: main;
 }
