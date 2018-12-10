@@ -5,7 +5,7 @@ body {
   grid-template-areas:
     "nav header"
     "nav main";
-  height: 100%;
+  background-color: #4f6367;
 }
 
 /*NAV STYLES*/
@@ -48,6 +48,8 @@ body {
   font-weight: 700;
   font-size: 1.4em;
   padding: 15px;
+  position: relative;
+  z-index: 2;
   margin: 8px 0px;
   text-align: center;
   text-shadow: -2px 2px 3px rgb(85, 85, 85);
@@ -68,6 +70,7 @@ body {
 
 header {  
   grid-area: header;
+  background-color: white;
 }
 
 .Banner {
@@ -130,7 +133,7 @@ header {
   background-color: #4f6367;
   font-weight: 700;
   font-size: 1.2em;
-  padding: 15px 30px; 
+  padding: 5px 30px; 
   font-family: 'Open Sans', sans-serif; 
   text-shadow: -2px 2px 3px rgb(85, 85, 85);
   color: #ffffff; 
@@ -290,29 +293,7 @@ aside {
   .main-nav-list li:hover {
     transform: scale(1)
   }
-}
 
-@media (max-width: 500px) {
-
-  aside {
-    margin-top: 40px;
-    margin-bottom: 140px;
-    padding: 0 30px;
-  }
-
-  .aside-header {
-    font-size: .8em;
-  }
-  
-  .content-value {
-    font-size: 1.6em;
-  }
-  
-  .content-label {
-    font-size: .4em;
-    margin: 5px auto 20px;
-  }
-}
   .mobile-profile-text {
     font-family: 'Oleo Script', cursive;
     color: white; 
@@ -345,10 +326,37 @@ aside {
     cursor: pointer; 
     color: #e8972c; 
   }
+}
+
+@media (max-width: 500px) {
+
+  aside {
+    margin-top: 40px;
+    margin-bottom: 140px;
+    padding: 0 30px;
+  }
+
+  .aside-header {
+    font-size: .8em;
+  }
+  
+  .content-value {
+    font-size: 1.6em;
+  }
+  
+  .content-label {
+    font-size: .4em;
+    margin: 5px auto 20px;
+  }
 
   .mobile-logout-btn:hover {
     cursor: pointer; 
     color: #e8972c; 
+  }
+
+  .mobile-profile-text {
+    font-size: 1.5em;
+    top: -3px;
   }
 }
  
