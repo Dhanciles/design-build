@@ -4,9 +4,9 @@
 ## We were provided with static comp for a fitness app. The task was to recreate it.
 
 
-![Original Comp ] (achieveapp.png)
+![Original Comp](achieveapp.png)
 
-![Our Desktop Version] (desktop.png)
+![Our Desktop Version](desktop.png)
 
-![Our Mobile Version] (mobile.png)
+![Our Mobile Version](mobile.png)
 
