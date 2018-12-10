@@ -5,9 +5,55 @@ body {
     "nav main"
 }
 
+/*NAV STYLES*/
+
 .main-nav {
+  background-color: #4f6367;
   grid-area: nav;
+  width: 250px;
 }
+
+.profile-pic {
+  border-radius: 50%;
+  margin: 0px 45px;
+  width: 160px;
+}
+
+.profile-text {
+  color: white;
+  font-size: 2.5em;
+  font-family: 'Oleo Script', cursive;
+  text-align: center;
+}
+
+.main-nav-list {
+  list-style: none;
+  margin: 35px auto;
+  padding: 0px;
+  width: 95%;
+}
+
+.main-nav-list li {
+  background-color: rgb(127, 146, 158);
+  border: 2px solid rgba(255, 255, 255, 0);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  padding: 15px;
+  margin: 8px 0px;
+  text-align: center;
+  text-shadow: -2px 2px 3px rgb(85, 85, 85);
+  transition: all .3s ease;
+}
+
+.main-nav-list li:hover {
+  cursor: pointer;
+  border-color: #e8972c;
+  transform: scale(1.1) translateX(10px)
+}
+
+/*HEADER STYLES*/
 
 header {  
   grid-area: header;
