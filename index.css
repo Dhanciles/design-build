@@ -172,7 +172,6 @@ main {
 .edit-goal-btn:hover {
   cursor: pointer;
   border-color: #e8972c;
-  transform: scale(1.1);
 }
 
 aside {
@@ -230,5 +229,81 @@ aside {
   .mobile-header {
     display: block;
     grid-area: header;
+  }
+
+  aside {
+    margin-top: 40px;
+    margin-bottom: 140px;
+    padding: 0 40px;
+  }
+
+  .aside-header {
+    font-size: 1.2em;
+  }
+  
+  .content-value {
+    font-size: 2.2em;
+  }
+  
+  .content-label {
+    font-size: .6em;
+    margin: 5px auto 20px;
+  }
+
+  .main-nav {
+    width: 100%;
+  }
+
+  .profile-pic {
+    display: none;
+  }
+
+  .profile-text {
+    display: none;
+  }
+
+  .main-nav {
+    background-color:#d9eaea;
+    height: auto;
+  }
+
+  .main-nav-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main-nav-list li {
+    background-color: rgb(127, 146, 158);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+    height: 90px;
+  }
+
+  .main-nav-list li:hover {
+    transform: scale(1)
+  }
+}
+
+@media (max-width: 500px) {
+
+  aside {
+    margin-top: 40px;
+    margin-bottom: 140px;
+    padding: 0 30px;
+  }
+
+  .aside-header {
+    font-size: .8em;
+  }
+  
+  .content-value {
+    font-size: 1.6em;
+  }
+  
+  .content-label {
+    font-size: .4em;
+    margin: 5px auto 20px;
   }
 }
